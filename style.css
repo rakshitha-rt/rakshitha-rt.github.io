@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* padding-top: 10px; */
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: beige;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+}
+.publications_body {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding-top: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', 'Georgia', serif;
+}
+.MAdverse {
+    width: 500px;
+    height: 250px;
+    /* object-fit: cover; */
+}
+.publications_div {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+    border-radius: 50px;
+}
+.publications_nav {
+    display: flex;
+    background-color: beige;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.publications_nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-style: italic;
+}

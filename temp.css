@@ -1,0 +1,168 @@
+body {
+    padding: 20px;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', 'Georgia', serif;
+    /* font-style: italic; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.info {
+    flex: 1;
+    font-family: 'Courier New', 'Georgia', serif;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.image {
+    flex: 0 0 auto;
+}
+
+.image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.publications {
+    margin-top: 40px;
+    padding: 20px;
+    font-family: 'Courier New', 'Georgia', serif;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.publications h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.publication-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-image {
+    flex: 0 0 200px;
+}
+
+.publication-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gif-container {
+    position: relative;
+}
+
+.gif-container .animated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gif-container:hover .static {
+    opacity: 0;
+}
+
+.gif-container:hover .animated {
+    opacity: 1;
+}
+
+.publication-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.publications a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publications a:hover {
+    text-decoration: underline;
+}
+
+.publications .btn-link {
+    color: #666;
+    font-size: 12px;
+    padding: 0;
+}
+
+.publications .card {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.publications pre {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Courier New', 'Georgia', serif;
+    font-style: italic;
+    line-height: 1.6;
+    border: 1px solid #e0e0e0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .info {
+        max-width: 100%;
+    }
+    
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .publication-image {
+        flex: none;
+        margin-bottom: 15px;
+    }
+    
+    .publication-content {
+        padding-left: 0;
+    }
+}
